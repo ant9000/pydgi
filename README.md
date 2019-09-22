@@ -11,4 +11,4 @@ My implementation of the DGI protocol is in pure Python, with the only external 
 
 The generic communication protocol is fully implemented; configuration and data parsing are still WIP.
 
-Presently there is a single working interface - the power one: pydgi can stream current data from the XAM module available on Xplained Pro boards. Refer to *power_measure.py* for an example of usage.
+Presently there is a single working interface - the power one: pydgi can stream current data from the XAM module available on Xplained Pro boards. Refer to examples for usage.
