@@ -1,7 +1,14 @@
 #!/usr/bin/env python3
 
 import argparse, sys
-import dgi
+
+try:
+    import dgi
+except ImportError as e:
+    import os
+    libdir = os.path.join(os.path.dirname(os.path.realpath(__file__)), '..')
+    sys.path.append(libdir)
+    import dgi
 
 def read_power_data(serial_number=None, show_config=False):
     with dgi.DGI(serial_number=serial_number) as dev:
