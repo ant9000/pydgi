@@ -1,1 +1,3 @@
+dist/
+pydgi.egg-info/
 *.pyc
