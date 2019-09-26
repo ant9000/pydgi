@@ -9,7 +9,7 @@ setuptools.setup(
     long_description=open('README.md').read(),
     long_description_content_type="text/markdown",
     url="https://github.com/ant9000/pydgi",
-    packages=['dgi'],
+    packages=setuptools.find_packages(),
     package_data={'dgi': ['docs/*.pdf', 'examples/*py']},
     scripts=['dgi_power_measure.py'],
     classifiers=[
