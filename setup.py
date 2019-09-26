@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name='pydgi',
-    version='0.1',
+    version='0.1.3',
     author="Antonio Galea",
     author_email="antonio.galea@gmail.com",
     description="Python implementation for Microchip/Atmel Data Gateway Interface",
@@ -14,7 +14,7 @@ setuptools.setup(
     scripts=['dgi_power_measure.py'],
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: GPLv3 License",
+        "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
         "Operating System :: OS Independent",
     ],
     python_requires='>=3',
