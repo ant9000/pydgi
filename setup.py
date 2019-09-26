@@ -1,8 +1,10 @@
+#!/usr/bin/env python3
+
 import setuptools
 
 setuptools.setup(
     name='pydgi',
-    version='0.1.3',
+    version='0.1.4',
     author="Antonio Galea",
     author_email="antonio.galea@gmail.com",
     description="Python implementation for Microchip/Atmel Data Gateway Interface",
