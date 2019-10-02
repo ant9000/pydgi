@@ -8,7 +8,7 @@ try:
     import dgi
 except ImportError as e:
     import os, sys
-    libdir = os.path.join(os.path.dirname(os.path.realpath(__file__)), '..')
+    libdir = os.path.join(os.path.dirname(os.path.realpath(__file__)), '../..')
     sys.path.append(libdir)
     import dgi
 
