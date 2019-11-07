@@ -23,7 +23,10 @@ class Protocol:
     def __init__(self, serial_number=''):
         devs = list(usb.core.find(idVendor=VENDOR, idProduct=PRODUCT, find_all=True))
         if len(devs) > 1 and not serial_number:
-            raise ValueError('Multiple devices found - please specify a serial_number')
+            raise ValueError(
+                'Multiple devices found - please specify a serial_number:\n\t%s' %
+                '\n\t'.join([ d.serial_number for d in devs])
+            )
         if serial_number:
             devs = [ d for d in devs if d.serial_number == serial_number ]
         if not len(devs):

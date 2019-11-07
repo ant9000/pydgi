@@ -4,7 +4,7 @@ import setuptools
 
 setuptools.setup(
     name='pydgi',
-    version='0.1.4',
+    version='0.1.5',
     author="Antonio Galea",
     author_email="antonio.galea@gmail.com",
     description="Python implementation for Microchip/Atmel Data Gateway Interface",
